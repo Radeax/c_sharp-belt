@@ -11581,11 +11581,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Jennifer\\Google Drive\\Education\\Coding Dojo\\csharp_stack\\exam\\BrightIdeas\\BrightIdeas.csproj",
+      "projectUniqueName": "C:\\Users\\Jennifer\\Google Drive\\Education\\Coding Dojo\\csharp_stack\\exam\\BrightIdeas2\\BrightIdeas.csproj",
       "projectName": "BrightIdeas",
-      "projectPath": "c:\\Users\\Jennifer\\Google Drive\\Education\\Coding Dojo\\csharp_stack\\exam\\BrightIdeas\\BrightIdeas.csproj",
+      "projectPath": "C:\\Users\\Jennifer\\Google Drive\\Education\\Coding Dojo\\csharp_stack\\exam\\BrightIdeas2\\BrightIdeas.csproj",
       "packagesPath": "C:\\Users\\Jennifer\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Jennifer\\Google Drive\\Education\\Coding Dojo\\csharp_stack\\exam\\BrightIdeas\\obj\\",
+      "outputPath": "C:\\Users\\Jennifer\\Google Drive\\Education\\Coding Dojo\\csharp_stack\\exam\\BrightIdeas2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
