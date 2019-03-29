@@ -1,0 +1,40 @@
+@model User
+<form class="index-form" asp-action="Register" asp-controller="Home" method="POST">
+    <fieldset>
+        <legend>Register</legend>
+        <table>
+            <tr>
+                <td><label for="Name">Name:</label></td>
+                <td><input type="text" name="Name"></td>
+                <td><span asp-validation-for="Name"></span></td>
+            </tr>
+            <tr>
+                <td><label for="Alias">Alias:</label></td>
+                <td><input type="text" name="Alias"></td>
+                <td><span asp-validation-for="Alias"></span></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email:</label></td>
+                <td><input type="text" name="Email"></td>
+                <td><span asp-validation-for="Email"></span></td>
+            </tr>
+            <tr>
+                <td><label for="Password">Password:</label></td>
+                <td><input type="password" name="Password"></td>
+                <td><span asp-validation-for="Password"></span></td>
+            </tr>
+            <tr>
+                <td><label for="Confirm">Confirm PW:</label></td>
+                <td><input type="password" name="Confirm"></td>
+                <td><span asp-validation-for="Confirm"></span></td>
+            </tr>
+            <tr>
+                <td>*Password should be at least 8 characters</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="right"><button>Register</button></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>

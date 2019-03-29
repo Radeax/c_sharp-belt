@@ -1,0 +1,29 @@
+@model User
+
+<table>
+    <tr>
+        <td>Name: </td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td>Alias: </td>
+        <td>@Model.Alias</td>
+    </tr>
+    <tr>
+        <td>Email: </td>
+        <td>@Model.Email</td>
+    </tr>
+</table>
+
+<hr>
+
+<table>
+    <tr>
+        <td>Total Number of Posts: </td>
+        <td>@ViewBag.Posts</td>
+    </tr>
+    <tr>
+        <td>Total Number of Likes: </td>
+        <td>@ViewBag.Likes</td>
+    </tr>
+</table>

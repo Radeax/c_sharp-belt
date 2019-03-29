@@ -1,0 +1,10 @@
+@model IndexModel
+<form action="/add" method="post">
+    <table>
+        <tr>
+            <td><textarea asp-for="NewIdea.Content"></textarea></td>
+            <td><button>Add Idea!</button></td>
+            <td><span asp-validation-for="NewIdea.Content"></span></td>
+        </tr>
+    </table>
+</form>

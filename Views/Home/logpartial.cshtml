@@ -1,0 +1,22 @@
+@model LoginUser
+<form class="index-form" asp-action="Login" method="POST">
+    <fieldset>
+        <legend>Login</legend>
+        <table>
+            <tr>
+                <td><label for="Email2">Email:</label></td>
+                <td><input type="text" name="Email2"></td>
+                <td><span asp-validation-for="Email2"></span></td>
+            </tr>
+            <tr>
+                <td><label for="Password2">Password:</label></td>
+                <td><input type="password" name="Password2"></td>
+                <td><span asp-validation-for="Password2"></span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="right"><button>Login</button></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>

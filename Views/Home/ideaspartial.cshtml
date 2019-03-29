@@ -1,0 +1,29 @@
+@model IndexModel
+<form>
+    <table>
+        @{
+            foreach(Idea idea in Model.Ideas.OrderByDescending(l => l.Likes.Count()))
+            {
+                <tr>
+                    <td rowspan="2" style="vertical-align:top"><a href="/users/@(idea.Creator.UserId)">@idea.Creator.Alias</a> says: </td>
+                    <td colspan="2" class="content"><p>@idea.Content</p></td>
+                    @if (@idea.UserId == @ViewBag.ID)
+                    {
+                        <td><a href="delete/@(idea.IdeaId)">Delete</a></td>
+                    }
+                </tr>
+                <tr>
+                    @if(@idea.Likes.FirstOrDefault(l => l.User.UserId == @ViewBag.ID) != null)
+                    {
+                        <td>You liked this</td>
+                    }
+                    else
+                    {
+                        <td><a href="like/@(idea.IdeaId)">Like</a></td>
+                    }
+                    <td><a href="/idea/@(idea.IdeaId)">@idea.Likes.Count() people</a> like this</td>
+                </tr>
+            }
+        }
+    </table>
+</form>
